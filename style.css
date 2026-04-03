@@ -332,15 +332,22 @@ h4 {
 }
 
 .social-link {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 2.35rem minmax(0, 1fr);
   align-items: center;
-  gap: 0.75rem;
+  column-gap: 0.75rem;
   padding: 0.9rem 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.025);
   color: var(--text);
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.social-link > span:last-child {
+  display: flex;
+  align-items: center;
+  min-height: 2.35rem;
 }
 
 .social-link:hover,
