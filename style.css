@@ -237,9 +237,10 @@ h1 {
 }
 
 .hero-title {
-  max-width: 16ch;
-  font-size: clamp(1.85rem, 2.9vw, 2.8rem);
+  max-width: none;
+  font-size: clamp(2rem, 3.2vw, 3.05rem);
   line-height: 1.08;
+  text-wrap: balance;
 }
 
 h2 {
@@ -424,6 +425,12 @@ h4 {
 }
 
 .overview-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.overview-note {
   margin: 0;
   color: var(--muted);
   line-height: 1.75;
