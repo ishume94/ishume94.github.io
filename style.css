@@ -142,26 +142,29 @@ main {
 
 .hero-side {
   display: flex;
+  align-items: flex-start;
 }
 
 .profile-card {
   display: grid;
-  gap: 1.4rem;
+  gap: 1rem;
   width: 100%;
   padding: 1.5rem;
   justify-items: center;
+  align-content: start;
 }
 
 .portrait-ring {
   display: grid;
   place-items: center;
-  width: min(320px, 100%);
+  width: min(248px, 82%);
   aspect-ratio: 1;
   padding: 0.55rem;
   border-radius: 50%;
   background:
     linear-gradient(135deg, rgba(107, 227, 210, 0.85), rgba(87, 119, 255, 0.72));
   box-shadow: 0 0 0 10px rgba(107, 227, 210, 0.08);
+  margin-inline: auto;
 }
 
 .portrait {
@@ -169,7 +172,7 @@ main {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 26%;
+  object-position: center 22%;
   border: 6px solid rgba(6, 16, 29, 0.9);
 }
 
@@ -178,6 +181,33 @@ main {
   padding: 1rem 1.1rem;
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.profile-meta p {
+  margin: 0.2rem 0;
+}
+
+.profile-contact {
+  width: 100%;
+  padding: 0.2rem 1.1rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.profile-contact-line {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-contact-line:last-child {
+  border-bottom: 0;
+}
+
+.profile-contact-line span {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .meta-label,
@@ -223,8 +253,8 @@ h4 {
 .card p,
 .publication-meta,
 .contact-copy,
-.site-footer,
 .profile-meta p,
+.profile-contact-line,
 .section-note,
 .subsection-header p {
   color: var(--muted);
@@ -235,6 +265,11 @@ h4 {
   max-width: 48rem;
   margin: 1.4rem 0 0;
   font-size: 1.08rem;
+}
+
+.intro-secondary {
+  margin-top: 0.9rem;
+  font-size: 1rem;
 }
 
 .hero-actions,
@@ -282,6 +317,11 @@ h4 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.85rem;
   margin-top: 1.9rem;
+  width: 100%;
+}
+
+.profile-card .social-grid {
+  margin-top: 0.15rem;
 }
 
 .social-link {
@@ -405,6 +445,7 @@ h4 {
 .feature-card {
   display: grid;
   gap: 1rem;
+  min-height: 100%;
 }
 
 .feature-wide {
@@ -531,12 +572,6 @@ h4 {
 .contact-line span {
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.site-footer {
-  padding-top: 2.6rem;
-  text-align: center;
-  font-size: 0.95rem;
 }
 
 @media (max-width: 980px) {
