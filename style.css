@@ -232,8 +232,8 @@ h4 {
 }
 
 h1 {
-  max-width: 13ch;
-  font-size: clamp(3rem, 7vw, 5.6rem);
+  max-width: 20ch;
+  font-size: clamp(1.95rem, 3.8vw, 3.15rem);
 }
 
 h2 {
