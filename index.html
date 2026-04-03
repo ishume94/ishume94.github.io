@@ -3,124 +3,370 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ishum | Personal Site</title>
+    <title>Isaac Leonardo Huidobro-Meezs | Quantum Computing</title>
     <meta
       name="description"
-      content="A personal site for Ishum with a short bio, current focus, highlights, and contact links."
+      content="Personal website of Isaac Leonardo Huidobro-Meezs, a PhD candidate working at the intersection of quantum chemistry, quantum computing, and machine learning."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero reveal">
-        <p class="eyebrow">Personal site for @ishume94</p>
-        <h1>
-          Building thoughtful work,
-          <span>one clear idea at a time.</span>
-        </h1>
-        <p class="hero-copy">
-          I am Ishum. This space is a home for my projects, interests, and the
-          kind of problems I enjoy solving. You can use this starter as-is, then
-          swap in your own bio, links, and portfolio highlights.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="mailto:your-email@example.com">
-            Email me
-          </a>
-          <a class="button button-secondary" href="https://github.com/ishume94">
-            GitHub
-          </a>
-        </div>
+      <header class="site-header">
+        <a class="brand" href="#top">Isaac Huidobro-Meezs</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
-      <main>
-        <section class="card reveal delay-1" aria-labelledby="about-title">
-          <div class="section-heading">
-            <p class="section-kicker">About</p>
-            <h2 id="about-title">A calm, practical snapshot of who I am.</h2>
+      <main id="top">
+        <!-- Hero: update the short intro, role, and links here if needed -->
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Quantum Chemistry x Quantum Computing x Machine Learning</p>
+            <h1>Researching practical quantum algorithms for chemistry, dynamics, and measurement optimization.</h1>
+            <p class="intro">
+              I am Isaac Leonardo Huidobro-Meezs, a PhD candidate in Chemistry at
+              McMaster University and a member of the ChemAI Lab. My work sits at
+              the intersection of quantum chemistry, quantum computing, and
+              machine learning, with a focus on measurement optimization,
+              sampling-based quantum algorithms, and neural-network-inspired
+              approaches to quantum dynamics.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Featured Work</a>
+              <a class="button button-secondary" href="#contact">Contact Me</a>
+            </div>
+
+            <!-- Social links: keep labels and URLs in one place for easy editing -->
+            <div class="social-grid" aria-label="External profiles">
+              <a class="social-link github" href="https://github.com/ishume94" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M8 18c-3 1-3-1.5-4-2m8 4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6.1 0-1.3-.5-2.4-1.2-3.2.1-.3.5-1.6-.1-3.2 0 0-1-.3-3.3 1.2a11.4 11.4 0 0 0-6 0C4 1.8 3 2.1 3 2.1c-.6 1.6-.2 2.9-.1 3.2-.8.8-1.2 1.9-1.2 3.2 0 4.7 2.7 5.8 5.5 6.1-.4.4-.7 1-.7 2V20" />
+                  </svg>
+                </span>
+                <span>GitHub</span>
+              </a>
+              <a class="social-link linkedin" href="https://www.linkedin.com/in/ishume/" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="4" />
+                    <rect x="7" y="10" width="2.5" height="7" fill="currentColor" class="icon-cutout" />
+                    <circle cx="8.25" cy="7.25" r="1.3" fill="currentColor" class="icon-cutout" />
+                    <path d="M12 10h2.4v1c.5-.7 1.3-1.3 2.7-1.3 2.1 0 3.2 1.3 3.2 3.8V17h-2.6v-3.2c0-1-.4-1.8-1.4-1.8s-1.6.7-1.6 1.8V17H12z" fill="currentColor" class="icon-cutout" />
+                  </svg>
+                </span>
+                <span>LinkedIn</span>
+              </a>
+              <a class="social-link scholar" href="https://scholar.google.com/citations?user=bjQxG2gAAAAJ&hl=en&inst=5276095121047773438" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3 2 8.2 12 13l7.4-3.5V15H21V8.2z" />
+                    <path d="M6 12.2V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.8l-6 2.8z" />
+                  </svg>
+                </span>
+                <span>Google Scholar</span>
+              </a>
+              <a class="social-link orcid" href="https://orcid.org/0000-0001-9630-0873" target="_blank" rel="noreferrer">
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="8" cy="8" r="1.2" fill="currentColor" class="icon-cutout" />
+                    <rect x="7" y="10" width="2" height="7" fill="currentColor" class="icon-cutout" />
+                    <path d="M12 10h2.1c2.2 0 3.9 1.4 3.9 3.5S16.3 17 14.1 17H12zm2 5c1.2 0 2-.6 2-1.5S15.2 12 14 12h-.1v3z" fill="currentColor" class="icon-cutout" />
+                  </svg>
+                </span>
+                <span>ORCID</span>
+              </a>
+            </div>
           </div>
-          <p>
-            I care about clear communication, useful tools, and work that feels
-            intentional. Right now this page is a polished starter template, so
-            the text is intentionally broad and easy to replace with your own
-            story.
+
+          <div class="hero-side">
+            <div class="profile-card">
+              <div class="portrait-ring">
+                <img
+                  src="ProfileLink.jpg"
+                  alt="Portrait of Isaac Leonardo Huidobro-Meezs"
+                  class="portrait"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <div class="profile-meta">
+                <p class="meta-label">Current Role</p>
+                <p>PhD Candidate in Chemistry</p>
+                <p>McMaster University, ChemAI Lab</p>
+                <p>Hamilton, Ontario, Canada</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About: this section is intentionally plain text so it stays easy to edit -->
+        <section class="section" id="about">
+          <div class="section-heading">
+            <p class="section-kicker">About Me</p>
+            <h2>Research experience that speaks to both academic and industry audiences.</h2>
+          </div>
+
+          <div class="about-grid">
+            <article class="card">
+              <p>
+                My research explores how generative models and scientific
+                computing can support quantum algorithms for chemistry. I am
+                especially interested in electronic structure, quantum dynamics,
+                non-adiabatic processes, and measurement-efficient quantum
+                computing workflows.
+              </p>
+              <p>
+                At McMaster University, I develop flow-based and related machine
+                learning approaches for quantum chemistry on quantum computers,
+                including measurement optimization, improved sampling-based
+                algorithms, and neural-network-inspired ansatzes for quantum
+                dynamics. Before that, I worked as a Research Assistant at the
+                University of Toronto on perturbative approaches for non-adiabatic
+                molecular dynamics and exploratory error-mitigation studies for
+                quantum computing calculations.
+              </p>
+            </article>
+
+            <article class="card detail-card">
+              <h3>Quick Snapshot</h3>
+              <ul class="detail-list">
+                <li><strong>Education:</strong> PhD in Chemistry, McMaster University; MSc and BSc in Chemistry, UNAM</li>
+                <li><strong>Programming:</strong> Python, C++, MATLAB</li>
+                <li><strong>Scientific Computing:</strong> Linux environments, OpenMP, high-performance computing</li>
+                <li><strong>Quantum Chemistry Tools:</strong> Gaussian, GAMESS, OpenMolcas, PySCF</li>
+                <li><strong>Languages:</strong> Spanish (native), English (professional proficiency)</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Projects: featured research plus repositories and workshop materials -->
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2>Featured research, code contributions, and workshop material.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="card feature-card feature-wide">
+              <div class="feature-image">
+                <img
+                  src="TOC_DiscreteFlowBasedForMeasOpt.png"
+                  alt="Table of contents graphic for Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="feature-content">
+                <p class="card-label">Featured Paper</p>
+                <h3>Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing</h3>
+                <p>
+                  This project develops discrete flow-based generative models for
+                  measurement optimization in quantum computing, targeting lower
+                  hardware and measurement costs for chemistry-oriented quantum
+                  algorithms.
+                </p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2509.15486" target="_blank" rel="noreferrer">Read paper</a>
+                  <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">View code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card feature-card">
+              <p class="card-label">Research Project</p>
+              <h3>GFlowNets for Hamiltonian Decomposition</h3>
+              <p>
+                A generative approach to grouping compatible operators in
+                Hamiltonians, aimed at reducing measurement costs for quantum
+                simulation and chemistry applications.
+              </p>
+              <div class="link-row">
+                <a class="text-link" href="https://arxiv.org/abs/2410.16041" target="_blank" rel="noreferrer">Read paper</a>
+                <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">View code</a>
+              </div>
+            </article>
+
+            <article class="card feature-card">
+              <p class="card-label">Workshop Tutorial</p>
+              <h3>QSciTech-QuantumBC-CMC 2025</h3>
+              <p>
+                Tutorial material for the workshop I delivered on Bayesian
+                optimization for quantum computing and GFlowNets for measurement
+                optimization in quantum computing.
+              </p>
+              <div class="link-row">
+                <a class="text-link" href="https://github.com/ChemAI-Lab/QSciTech-QuantumBC-CMC-2025" target="_blank" rel="noreferrer">Open tutorial repo</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="subsection">
+            <div class="subsection-header">
+              <h3>Repositories and Contributions</h3>
+              <p>Selected repositories connected to my recent papers and teaching activities.</p>
+            </div>
+
+            <div class="repo-grid">
+              <article class="repo-card">
+                <h4>GFlowNets-MOpt</h4>
+                <p>
+                  Code associated with my recent work on measurement optimization
+                  and Hamiltonian decomposition using flow-based generative
+                  models.
+                </p>
+                <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">Repository link</a>
+              </article>
+
+              <article class="repo-card">
+                <h4>Workshop Repository</h4>
+                <p>
+                  Hands-on material for the QSciTech-QuantumBC-CMC 2025 workshop,
+                  including tutorial content related to optimization and quantum
+                  computing.
+                </p>
+                <a class="text-link" href="https://github.com/ChemAI-Lab/QSciTech-QuantumBC-CMC-2025" target="_blank" rel="noreferrer">Tutorial link</a>
+              </article>
+
+              <article class="repo-card">
+                <h4>GitHub Profile</h4>
+                <p>
+                  A broader view of my code contributions, experiments, and
+                  project history across research and teaching activities.
+                </p>
+                <a class="text-link" href="https://github.com/ishume94" target="_blank" rel="noreferrer">Visit GitHub</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Publications: keep each entry self-contained so it is easy to add or remove items later -->
+        <section class="section" id="publications">
+          <div class="section-heading">
+            <p class="section-kicker">Publications</p>
+            <h2>Selected publications and manuscripts.</h2>
+          </div>
+
+          <div class="publication-list">
+            <article class="publication-item">
+              <p class="publication-year">2025</p>
+              <div class="publication-body">
+                <h3>Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Jun Dai, Rodrigo A. Vargas-Hernandez</p>
+                <p class="publication-meta">arXiv preprint 2509.15486. Submitted to Journal of Chemical Theory and Computation.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2509.15486" target="_blank" rel="noreferrer">Paper</a>
+                  <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <p class="publication-year">2024</p>
+              <div class="publication-body">
+                <h3>GFlowNets for Hamiltonian Decomposition in Groups of Compatible Operators</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Jun Dai, Guillaume Rabusseau, Rodrigo A. Vargas-Hernandez</p>
+                <p class="publication-meta">Machine Learning and the Physical Sciences Workshop, NeurIPS 2024.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2410.16041" target="_blank" rel="noreferrer">Paper</a>
+                  <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <p class="publication-year">2019</p>
+              <div class="publication-body">
+                <h3>Effect of Tunneling-Assisted Intersystem Crossing on the Magnetic Behavior of the Pt13 Cluster</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Jose M. Castillo-Robles, Emilio Orgaz</p>
+                <p class="publication-meta">Journal of Physical Chemistry C 123 (32), 19887-19893.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://doi.org/10.1021/acs.jpcc.9b02294" target="_blank" rel="noreferrer">Paper</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <p class="publication-year">2017</p>
+              <div class="publication-body">
+                <h3>Investigation of the Spin Competition in the Al6 Cluster</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Emilio Orgaz</p>
+                <p class="publication-meta">Journal of Physical Chemistry C 121 (21), 11872-11879.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://doi.org/10.1021/acs.jpcc.7b02379" target="_blank" rel="noreferrer">Paper</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <p class="publication-year">2016</p>
+              <div class="publication-body">
+                <h3>The Role of Bulkiness in Haptotropic Shifts of Metal-Cumulene Complexes</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Midori Segovia-Poncelis, Jose Enrique Barquera-Lozada</p>
+                <p class="publication-meta">European Journal of Inorganic Chemistry 2016, 4226-4233.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://doi.org/10.1002/ejic.201600635" target="_blank" rel="noreferrer">Paper</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="section-note">
+            For a fuller record of publications, talks, and ongoing work, see my
+            Google Scholar and ORCID profiles above.
           </p>
-          <div class="pill-row" aria-label="Focus areas">
-            <span class="pill">Research</span>
-            <span class="pill">Software</span>
-            <span class="pill">Teaching</span>
-            <span class="pill">Writing</span>
-          </div>
         </section>
 
-        <section class="grid-two">
-          <article class="card reveal delay-2" aria-labelledby="now-title">
-            <div class="section-heading">
-              <p class="section-kicker">Now</p>
-              <h2 id="now-title">What I am focused on</h2>
+        <!-- Contact: update primary email or add more links here -->
+        <section class="section" id="contact">
+          <div class="contact-panel">
+            <div>
+              <p class="section-kicker">Contact</p>
+              <h2>Open to research collaborations, talks, workshops, and quantum computing roles.</h2>
+              <p class="contact-copy">
+                I am interested in opportunities across academic research and
+                industry where quantum computing, chemistry, scientific software,
+                and machine learning come together.
+              </p>
             </div>
-            <ul class="clean-list">
-              <li>Sharpening technical skills through hands-on projects.</li>
-              <li>Exploring ideas that connect analysis, creativity, and code.</li>
-              <li>Building a personal web presence that can grow over time.</li>
-            </ul>
-          </article>
 
-          <article class="card reveal delay-3" aria-labelledby="links-title">
-            <div class="section-heading">
-              <p class="section-kicker">Links</p>
-              <h2 id="links-title">Places to find me</h2>
+            <div class="contact-card">
+              <a class="contact-line" href="mailto:huidobri@mcmaster.ca">
+                <span>Email</span>
+                <strong>huidobri@mcmaster.ca</strong>
+              </a>
+              <a class="contact-line" href="mailto:ishume94@gmail.com">
+                <span>Secondary Email</span>
+                <strong>ishume94@gmail.com</strong>
+              </a>
+              <div class="contact-line">
+                <span>Location</span>
+                <strong>Hamilton, Ontario, Canada</strong>
+              </div>
+              <div class="contact-line">
+                <span>Profiles</span>
+                <strong>GitHub, LinkedIn, Google Scholar, ORCID</strong>
+              </div>
             </div>
-            <ul class="link-list">
-              <li>
-                <a href="https://github.com/ishume94">GitHub</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-              </li>
-              <li>
-                <a href="mailto:your-email@example.com">Email</a>
-              </li>
-            </ul>
-          </article>
-        </section>
-
-        <section class="card reveal delay-4" aria-labelledby="highlights-title">
-          <div class="section-heading">
-            <p class="section-kicker">Highlights</p>
-            <h2 id="highlights-title">A few things this site can grow into</h2>
-          </div>
-          <div class="feature-grid">
-            <article class="feature">
-              <h3>Project case studies</h3>
-              <p>
-                Add screenshots, short writeups, and the story behind the work.
-              </p>
-            </article>
-            <article class="feature">
-              <h3>Writing and notes</h3>
-              <p>
-                Share essays, course notes, or ideas worth revisiting later.
-              </p>
-            </article>
-            <article class="feature">
-              <h3>Contact and opportunities</h3>
-              <p>
-                Give visitors a simple way to reach out for collaboration.
-              </p>
-            </article>
           </div>
         </section>
       </main>
 
-      <footer class="footer reveal delay-5">
-        <p>Built with simple HTML and CSS so it is easy to edit and publish.</p>
+      <footer class="site-footer">
+        <p>Built with plain HTML and CSS for GitHub Pages and easy future editing.</p>
       </footer>
     </div>
   </body>
