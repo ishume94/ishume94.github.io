@@ -237,8 +237,8 @@ h1 {
 }
 
 .hero-title {
-  max-width: 12ch;
-  font-size: clamp(1.55rem, 2.35vw, 2.35rem);
+  max-width: 16ch;
+  font-size: clamp(1.85rem, 2.9vw, 2.8rem);
   line-height: 1.08;
 }
 
@@ -413,7 +413,7 @@ h4 {
 
 .overview-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.82fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.85fr);
   gap: 1.2rem;
   align-items: start;
 }
@@ -515,10 +515,6 @@ h4 {
   gap: 1rem;
 }
 
-.repo-grid-compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .repo-card {
   padding: 1.4rem;
 }
@@ -527,8 +523,13 @@ h4 {
   margin: 0.9rem 0 1rem;
 }
 
+.repo-grid.repo-grid-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .snapshot-card {
   align-self: start;
+  width: 100%;
   padding: 1.25rem 1.35rem;
 }
 
@@ -659,6 +660,10 @@ h4 {
   }
 
   .publication-item {
+    grid-template-columns: 1fr;
+  }
+
+  .repo-grid.repo-grid-compact {
     grid-template-columns: 1fr;
   }
 
