@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=6" />
+    <link rel="stylesheet" href="style.css?v=7" />
   </head>
   <body>
     <div class="page-shell">
@@ -51,10 +51,11 @@
               My research explores how generative models can improve quantum
               algorithms for chemistry, for example by reducing measurements and
               two-qubit gates in grouping schemes or by learning derandomized
-              measurement policies for shadow-based algorithms. Directions I am
-              currently exploring include neural-wavefunction approaches for
-              non-adiabatic processes and localized ansatze for quantum
-              chemistry on quantum computers. I am especially interested in
+              measurement policies for shadow-based algorithms. I also develop
+              localized ansatzes for quantum chemistry on quantum computers and
+              ansatzes for strongly correlated systems, while exploring
+              neural-wavefunction approaches for non-adiabatic processes.
+              I am especially interested in
               electronic structure, quantum dynamics, non-adiabatic processes,
               and in how generative models can be useful in settings where
               little to no data is available.
@@ -153,6 +154,26 @@
 
             <div class="repo-grid repo-grid-compact">
               <article class="repo-card">
+                <h4>Grinch</h4>
+                <p>
+                  Companion code for our work on designing quantum optical
+                  experiments with discrete generative models, using fidelity
+                  rewards to discover optical graphs.
+                </p>
+                <a class="text-link" href="https://github.com/ishume94/Grinch" target="_blank" rel="noreferrer">Repository link</a>
+              </article>
+
+              <article class="repo-card">
+                <h4>VarSI</h4>
+                <p>
+                  Companion code for variance-aware Sorted Insertion heuristics
+                  that improve Pauli grouping and reduce measurement costs in
+                  quantum energy estimation.
+                </p>
+                <a class="text-link" href="https://github.com/ishume94/VarSI" target="_blank" rel="noreferrer">Repository link</a>
+              </article>
+
+              <article class="repo-card">
                 <h4>GFlowNets-MOpt</h4>
                 <p>
                   Code associated with my recent work on measurement optimization
@@ -244,6 +265,37 @@
             <article class="card feature-card feature-wide">
               <div class="feature-image">
                 <img
+                  src="Grinch.png"
+                  alt="Grinch builds optical graphs edge by edge with GFlowNets, excludes invalid actions, and optimizes edge weights to reward fidelity to a target quantum state."
+                  width="4423"
+                  height="3162"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="feature-content">
+                <p class="card-label">Featured Paper · 2026 Preprint</p>
+                <h3>Grinch: Generative Design of Quantum Optical Experiments</h3>
+                <p>
+                  Our method, Grinch, designs quantum optical experiments by
+                  building optical graphs from the bottom up. It learns directly
+                  from fidelity rewards without a pre-existing training dataset,
+                  finding multiple high-fidelity designs for entangled states and
+                  photonic gates. The framework incorporates hardware connectivity
+                  constraints and identifies alternative CNOT and Toffoli gate
+                  constructions, including Toffoli gates with two ancillas.
+                </p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2609.08073" target="_blank" rel="noreferrer">Read paper</a>
+                  <a class="text-link" href="https://github.com/ishume94/Grinch" target="_blank" rel="noreferrer">View code</a>
+                  <a class="text-link" href="Grinch.png" target="_blank" rel="noreferrer">View full-size figure</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card feature-card feature-wide">
+              <div class="feature-image">
+                <img
                   src="TOC_DiscreteFlowBasedForMeasOpt.png"
                   alt="Table of contents graphic for Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing"
                   loading="lazy"
@@ -251,7 +303,7 @@
                 />
               </div>
               <div class="feature-content">
-                <p class="card-label">Featured Paper</p>
+                <p class="card-label">Accepted in Digital Discovery</p>
                 <h3>Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing</h3>
                 <p>
                   This project develops discrete flow-based generative models for
@@ -263,6 +315,25 @@
                   <a class="text-link" href="https://arxiv.org/abs/2509.15486" target="_blank" rel="noreferrer">Read paper</a>
                   <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">View code</a>
                 </div>
+              </div>
+            </article>
+
+            <article class="card feature-card">
+              <p class="card-label">Submitted to Quantum Science and Technology</p>
+              <h3>VarSI: Better Pauli Groupings for Quantum Energy Estimation</h3>
+              <p>
+                We introduce variance-aware Sorted Insertion (VarSI), a family of
+                heuristics that uses approximate wavefunction covariances to build
+                better Pauli groups for quantum energy estimation. Benchmarks on
+                130 molecular Hamiltonians show improved measurement efficiency
+                and stronger initializations for iterative coefficient splitting
+                (ICS). These initializations reduce post-ICS measurement costs by
+                up to 70% compared with standard Sorted Insertion, with mean
+                reductions of 9–15.3% across the settings studied.
+              </p>
+              <div class="link-row">
+                <a class="text-link" href="https://arxiv.org/abs/2607.02794" target="_blank" rel="noreferrer">Read paper</a>
+                <a class="text-link" href="https://github.com/ishume94/VarSI" target="_blank" rel="noreferrer">View code</a>
               </div>
             </article>
 
@@ -340,11 +411,37 @@
 
           <div class="publication-list">
             <article class="publication-item">
+              <p class="publication-year">2026</p>
+              <div class="publication-body">
+                <h3>Bottom-Up Design of Quantum Optical Experiments Using Discrete Generative Models</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Simón Paiva-Ortega, Rodrigo A. Vargas-Hernández</p>
+                <p class="publication-meta">arXiv preprint 2609.08073.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2609.08073" target="_blank" rel="noreferrer">Paper</a>
+                  <a class="text-link" href="https://github.com/ishume94/Grinch" target="_blank" rel="noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
+              <p class="publication-year">2026</p>
+              <div class="publication-body">
+                <h3>Reducing quantum measurements in qubit-based overlapping grouping methods for quantum energy estimation through better initializations</h3>
+                <p class="publication-meta">Isaac L. Huidobro-Meezs, Rodrigo A. Vargas-Hernández</p>
+                <p class="publication-meta">arXiv preprint 2607.02794. Submitted to Quantum Science and Technology.</p>
+                <div class="link-row">
+                  <a class="text-link" href="https://arxiv.org/abs/2607.02794" target="_blank" rel="noreferrer">Paper</a>
+                  <a class="text-link" href="https://github.com/ishume94/VarSI" target="_blank" rel="noreferrer">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication-item">
               <p class="publication-year">2025</p>
               <div class="publication-body">
                 <h3>Discrete Flow-Based Generative Models for Measurement Optimization in Quantum Computing</h3>
                 <p class="publication-meta">Isaac L. Huidobro-Meezs, Jun Dai, Rodrigo A. Vargas-Hernandez</p>
-                <p class="publication-meta">arXiv preprint 2509.15486. Submitted to Journal of Chemical Theory and Computation.</p>
+                <p class="publication-meta">Accepted in Digital Discovery. Preprint: arXiv:2509.15486 (2025).</p>
                 <div class="link-row">
                   <a class="text-link" href="https://arxiv.org/abs/2509.15486" target="_blank" rel="noreferrer">Paper</a>
                   <a class="text-link" href="https://github.com/ChemAI-Lab/GFlowNets-MOpt" target="_blank" rel="noreferrer">Code</a>
