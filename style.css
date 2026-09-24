@@ -555,6 +555,11 @@ h4 {
   padding: 0.68rem 0;
 }
 
+.talk-list {
+  display: grid;
+  gap: 1rem;
+}
+
 .publication-list {
   display: grid;
   gap: 1rem;
