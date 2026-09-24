@@ -557,7 +557,7 @@ h4 {
 
 .talk-list {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .publication-list {
